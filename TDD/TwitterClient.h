@@ -18,12 +18,19 @@ typedef enum {
 @interface TwitterClient : NSObject
 {
     NSMutableArray *_tweets;
+    
+    id __mockResponse;
 }
 
 @property(nonatomic, readonly) NSArray *tweets;
 
 - (void)requestPublicTimeline:(void (^)(TwitterClientResponseStatus status)) callback;
-- (void)searchWithString:(NSString*)word callback:(void (^)())callback;
+- (void)searchWithString:(NSString *)word callback:(void (^)(TwitterClientResponseStatus status))callback;
 - (Tweet*)tweetForIndexPath:(NSIndexPath*)indexPath;
+
+// テスト用のメソッド
+- (void)__setMockResponse:(id)response;
+- (id)__response:(id)response;
+
 
 @end

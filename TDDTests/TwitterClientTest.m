@@ -11,11 +11,35 @@
 
 @implementation TwitterClientTest
 
+- (void)testMock
+{
+    TwitterClient *noMock = [[TwitterClient alloc] init];
+    
+    STAssertEqualObjects(@"モックしない", [noMock __response:@"モックしない"], @"モックしないはずなので モックしない になってほしい");
+    
+    [noMock release];
+    
+    TwitterClient *mock = [[TwitterClient alloc] init];
+    [mock __setMockResponse:@"モック"];
+    
+    STAssertEqualObjects(@"モック", [mock __response:@"モックできていない"], @"モックするので モック になってほしい");
+    
+    [mock release];
+}
+
 - (void)testRequestPublicTimeline
 {
     TwitterClient *client = [[TwitterClient alloc] init];
 
     __block BOOL calledBack = NO;
+    
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"public_time_line" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    NSError *error=nil;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];    
+    STAssertNil(error, @"jsonの読み込みに失敗");
+
+    [client __setMockResponse:json];
     
     [client requestPublicTimeline:^(TwitterClientResponseStatus status) {
 
@@ -39,7 +63,15 @@
     
     __block BOOL calledBack = NO;
     
-    [client searchWithString:@"yaakaito" callback:^{
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"search_yaakaito" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    NSError *error=nil;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];    
+    STAssertNil(error, @"jsonの読み込みに失敗");
+    
+    [client __setMockResponse:json];
+    
+    [client searchWithString:@"yaakaito" callback:^(TwitterClientResponseStatus status){
         calledBack = YES;
     }];
     
@@ -60,7 +92,16 @@
     
     __block BOOL calledBack = NO;
     
-    [client searchWithString:@"iOS" callback:^{
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"search_ios" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    NSError *error=nil;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];    
+    STAssertEquals(23U, [[json objectForKey:@"results"] count], @"23個あるか確認");
+    STAssertNil(error, @"jsonの読み込みに失敗");
+    
+    [client __setMockResponse:json];
+    
+    [client searchWithString:@"iOS" callback:^(TwitterClientResponseStatus status){
         calledBack = YES;
     }];
     
@@ -80,6 +121,14 @@
     TwitterClient *client = [[TwitterClient alloc] init];
 
     __block BOOL calledBack = NO;
+    
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"public_time_line" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    NSError *error=nil;
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];    
+    STAssertNil(error, @"jsonの読み込みに失敗");
+    
+    [client __setMockResponse:json];
     
     [client requestPublicTimeline:^(TwitterClientResponseStatus status) {
         

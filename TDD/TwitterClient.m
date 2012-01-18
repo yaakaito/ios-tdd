@@ -31,7 +31,7 @@
                                                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
                                                                                             
                                                                                             [_tweets removeAllObjects];
-                                                                                            NSArray *tweetsJSON = JSON;
+                                                                                            NSArray *tweetsJSON = [self __response:JSON];
                                                                                             for (id tweetJSON in tweetsJSON) {
                                                                                                 [_tweets addObject:[Tweet tweetWithJSON:tweetJSON]];
                                                                                             }
@@ -48,7 +48,7 @@
 
 }
 
-- (void)searchWithString:(NSString *)word callback:(void (^)())callback
+- (void)searchWithString:(NSString *)word callback:(void (^)(TwitterClientResponseStatus status))callback
 {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://search.twitter.com/search.json?q=%@&rpp=20&result_type=mixed", word]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -56,7 +56,7 @@
                                                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
                                                                                             
                                                                                             [_tweets removeAllObjects];
-                                                                                            NSArray *tweetsJSON = [JSON objectForKey:@"results"];
+                                                                                            NSArray *tweetsJSON = [[self __response:JSON] objectForKey:@"results"];
                                                                                             for (id tweetJSON in tweetsJSON) {
                                                                                                 if([_tweets count] == 20){
                                                                                                     break;
@@ -85,9 +85,31 @@
     return [_tweets objectAtIndex:indexPath.row];
 }
 
+- (void)__setMockResponse:(id)response
+{
+    if(__mockResponse){
+        [__mockResponse release];
+    }
+    __mockResponse = [response retain];
+}
+
+- (id)__response:(id)response
+{
+    if(__mockResponse){
+        return __mockResponse;
+    }
+    
+    return response;
+}
+
 - (void)dealloc
 {
     [_tweets release];
+    
+    if(__mockResponse)
+    {
+        [__mockResponse release];
+    }
     
     
     [super dealloc];
