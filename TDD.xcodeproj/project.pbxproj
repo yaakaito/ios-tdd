@@ -45,6 +45,7 @@
 		B95DD82F14E1772700DF4815 /* PublicTimeLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95DD82D14E1772700DF4815 /* PublicTimeLineViewController.xib */; };
 		B95DD83214E1787000DF4815 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD83114E1787000DF4815 /* ViewController.m */; };
 		B95DD83514E1787700DF4815 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95DD83314E1787700DF4815 /* ViewController.xib */; };
+		B95DD83814E183ED00DF4815 /* PublicTimeLineControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD83714E183ED00DF4815 /* PublicTimeLineControllerTest.m */; };
 		B9D7783F14C4D10B00E31F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7783E14C4D10B00E31F6D /* UIKit.framework */; };
 		B9D7784114C4D10B00E31F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7784014C4D10B00E31F6D /* Foundation.framework */; };
 		B9D7784314C4D10B00E31F6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7784214C4D10B00E31F6D /* CoreGraphics.framework */; };
@@ -133,6 +134,8 @@
 		B95DD83014E1787000DF4815 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B95DD83114E1787000DF4815 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B95DD83414E1787700DF4815 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B95DD83614E183ED00DF4815 /* PublicTimeLineControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTimeLineControllerTest.h; sourceTree = "<group>"; };
+		B95DD83714E183ED00DF4815 /* PublicTimeLineControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTimeLineControllerTest.m; sourceTree = "<group>"; };
 		B9D7783A14C4D10B00E31F6D /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D7783E14C4D10B00E31F6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9D7784014C4D10B00E31F6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -329,6 +332,8 @@
 				B9D7787C14C4D18800E31F6D /* TweetTest.m */,
 				B9D7787D14C4D18800E31F6D /* TwitterClientTest.h */,
 				B9D7787E14C4D18800E31F6D /* TwitterClientTest.m */,
+				B95DD83614E183ED00DF4815 /* PublicTimeLineControllerTest.h */,
+				B95DD83714E183ED00DF4815 /* PublicTimeLineControllerTest.m */,
 				B903B0F214C73F46008DB7CB /* Mock */,
 				B9D7786314C4D10B00E31F6D /* Supporting Files */,
 			);
@@ -543,6 +548,7 @@
 				B903B12814C74C56008DB7CB /* Reachability.m in Sources */,
 				B95DD82014E1745600DF4815 /* TDDAppEntry.m in Sources */,
 				B95DD82514E1762B00DF4815 /* PublicTimeLineController.m in Sources */,
+				B95DD83814E183ED00DF4815 /* PublicTimeLineControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
