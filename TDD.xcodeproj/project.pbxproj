@@ -37,14 +37,20 @@
 		B903B13214C74DA4008DB7CB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B903B12F14C74D8A008DB7CB /* libz.dylib */; };
 		B903B13414C74DB8008DB7CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B903B13314C74DB8008DB7CB /* SystemConfiguration.framework */; };
 		B903B13514C74DBF008DB7CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B903B13314C74DB8008DB7CB /* SystemConfiguration.framework */; };
+		B95DD81F14E1745600DF4815 /* TDDAppEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD81E14E1745600DF4815 /* TDDAppEntry.m */; };
+		B95DD82014E1745600DF4815 /* TDDAppEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD81E14E1745600DF4815 /* TDDAppEntry.m */; };
+		B95DD82414E1762B00DF4815 /* PublicTimeLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD82314E1762B00DF4815 /* PublicTimeLineController.m */; };
+		B95DD82514E1762B00DF4815 /* PublicTimeLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD82314E1762B00DF4815 /* PublicTimeLineController.m */; };
+		B95DD82E14E1772700DF4815 /* PublicTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD82C14E1772700DF4815 /* PublicTimeLineViewController.m */; };
+		B95DD82F14E1772700DF4815 /* PublicTimeLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95DD82D14E1772700DF4815 /* PublicTimeLineViewController.xib */; };
+		B95DD83214E1787000DF4815 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95DD83114E1787000DF4815 /* ViewController.m */; };
+		B95DD83514E1787700DF4815 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95DD83314E1787700DF4815 /* ViewController.xib */; };
 		B9D7783F14C4D10B00E31F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7783E14C4D10B00E31F6D /* UIKit.framework */; };
 		B9D7784114C4D10B00E31F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7784014C4D10B00E31F6D /* Foundation.framework */; };
 		B9D7784314C4D10B00E31F6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7784214C4D10B00E31F6D /* CoreGraphics.framework */; };
 		B9D7784914C4D10B00E31F6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D7784714C4D10B00E31F6D /* InfoPlist.strings */; };
 		B9D7784B14C4D10B00E31F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D7784A14C4D10B00E31F6D /* main.m */; };
 		B9D7784F14C4D10B00E31F6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D7784E14C4D10B00E31F6D /* AppDelegate.m */; };
-		B9D7785214C4D10B00E31F6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D7785114C4D10B00E31F6D /* ViewController.m */; };
-		B9D7785514C4D10B00E31F6D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D7785314C4D10B00E31F6D /* ViewController.xib */; };
 		B9D7785D14C4D10B00E31F6D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7785C14C4D10B00E31F6D /* SenTestingKit.framework */; };
 		B9D7785E14C4D10B00E31F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7783E14C4D10B00E31F6D /* UIKit.framework */; };
 		B9D7785F14C4D10B00E31F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7784014C4D10B00E31F6D /* Foundation.framework */; };
@@ -117,6 +123,16 @@
 		B903B12C14C74D7A008DB7CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B903B12F14C74D8A008DB7CB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B903B13314C74DB8008DB7CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B95DD81D14E1745600DF4815 /* TDDAppEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDAppEntry.h; sourceTree = "<group>"; };
+		B95DD81E14E1745600DF4815 /* TDDAppEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDAppEntry.m; sourceTree = "<group>"; };
+		B95DD82214E1762B00DF4815 /* PublicTimeLineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTimeLineController.h; sourceTree = "<group>"; };
+		B95DD82314E1762B00DF4815 /* PublicTimeLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTimeLineController.m; sourceTree = "<group>"; };
+		B95DD82B14E1772700DF4815 /* PublicTimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTimeLineViewController.h; sourceTree = "<group>"; };
+		B95DD82C14E1772700DF4815 /* PublicTimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTimeLineViewController.m; sourceTree = "<group>"; };
+		B95DD82D14E1772700DF4815 /* PublicTimeLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicTimeLineViewController.xib; sourceTree = "<group>"; };
+		B95DD83014E1787000DF4815 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B95DD83114E1787000DF4815 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B95DD83414E1787700DF4815 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		B9D7783A14C4D10B00E31F6D /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D7783E14C4D10B00E31F6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9D7784014C4D10B00E31F6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,9 +143,6 @@
 		B9D7784C14C4D10B00E31F6D /* TDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TDD-Prefix.pch"; sourceTree = "<group>"; };
 		B9D7784D14C4D10B00E31F6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9D7784E14C4D10B00E31F6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B9D7785014C4D10B00E31F6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B9D7785114C4D10B00E31F6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B9D7785414C4D10B00E31F6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		B9D7785B14C4D10B00E31F6D /* TDDTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D7785C14C4D10B00E31F6D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B9D7786414C4D10B00E31F6D /* TDDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDDTests-Info.plist"; sourceTree = "<group>"; };
@@ -277,16 +290,23 @@
 		B9D7784414C4D10B00E31F6D /* TDD */ = {
 			isa = PBXGroup;
 			children = (
+				B95DD83314E1787700DF4815 /* ViewController.xib */,
+				B95DD83014E1787000DF4815 /* ViewController.h */,
+				B95DD83114E1787000DF4815 /* ViewController.m */,
 				B9D7787314C4D17B00E31F6D /* Tweet.h */,
 				B9D7787414C4D17B00E31F6D /* Tweet.m */,
 				B9D7787514C4D17B00E31F6D /* TwitterClient.h */,
 				B9D7787614C4D17B00E31F6D /* TwitterClient.m */,
 				B9D7784D14C4D10B00E31F6D /* AppDelegate.h */,
 				B9D7784E14C4D10B00E31F6D /* AppDelegate.m */,
-				B9D7785014C4D10B00E31F6D /* ViewController.h */,
-				B9D7785114C4D10B00E31F6D /* ViewController.m */,
-				B9D7785314C4D10B00E31F6D /* ViewController.xib */,
 				B9D7784514C4D10B00E31F6D /* Supporting Files */,
+				B95DD81D14E1745600DF4815 /* TDDAppEntry.h */,
+				B95DD81E14E1745600DF4815 /* TDDAppEntry.m */,
+				B95DD82214E1762B00DF4815 /* PublicTimeLineController.h */,
+				B95DD82314E1762B00DF4815 /* PublicTimeLineController.m */,
+				B95DD82B14E1772700DF4815 /* PublicTimeLineViewController.h */,
+				B95DD82C14E1772700DF4815 /* PublicTimeLineViewController.m */,
+				B95DD82D14E1772700DF4815 /* PublicTimeLineViewController.xib */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -425,7 +445,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D7784914C4D10B00E31F6D /* InfoPlist.strings in Resources */,
-				B9D7785514C4D10B00E31F6D /* ViewController.xib in Resources */,
+				B95DD82F14E1772700DF4815 /* PublicTimeLineViewController.xib in Resources */,
+				B95DD83514E1787700DF4815 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +486,6 @@
 			files = (
 				B9D7784B14C4D10B00E31F6D /* main.m in Sources */,
 				B9D7784F14C4D10B00E31F6D /* AppDelegate.m in Sources */,
-				B9D7785214C4D10B00E31F6D /* ViewController.m in Sources */,
 				B9D7787714C4D17B00E31F6D /* Tweet.m in Sources */,
 				B9D7787914C4D17B00E31F6D /* TwitterClient.m in Sources */,
 				B9D7789814C4D19700E31F6D /* AFHTTPClient.m in Sources */,
@@ -487,6 +507,10 @@
 				B903B12314C74C56008DB7CB /* ASIInputStream.m in Sources */,
 				B903B12514C74C56008DB7CB /* ASINetworkQueue.m in Sources */,
 				B903B12714C74C56008DB7CB /* Reachability.m in Sources */,
+				B95DD81F14E1745600DF4815 /* TDDAppEntry.m in Sources */,
+				B95DD82414E1762B00DF4815 /* PublicTimeLineController.m in Sources */,
+				B95DD82E14E1772700DF4815 /* PublicTimeLineViewController.m in Sources */,
+				B95DD83214E1787000DF4815 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +541,8 @@
 				B903B12414C74C56008DB7CB /* ASIInputStream.m in Sources */,
 				B903B12614C74C56008DB7CB /* ASINetworkQueue.m in Sources */,
 				B903B12814C74C56008DB7CB /* Reachability.m in Sources */,
+				B95DD82014E1745600DF4815 /* TDDAppEntry.m in Sources */,
+				B95DD82514E1762B00DF4815 /* PublicTimeLineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,20 +557,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B95DD83314E1787700DF4815 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B95DD83414E1787700DF4815 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
 		B9D7784714C4D10B00E31F6D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B9D7784814C4D10B00E31F6D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B9D7785314C4D10B00E31F6D /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9D7785414C4D10B00E31F6D /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		B9D7786514C4D10B00E31F6D /* InfoPlist.strings */ = {

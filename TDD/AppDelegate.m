@@ -17,6 +17,8 @@
 
 - (void)dealloc
 {
+    _appEntry.rootViewController = nil;
+    [_appEntry release];
     [_window release];
     [_viewController release];
     [super dealloc];
@@ -28,6 +30,11 @@
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
+    
+    _appEntry = [[TDDAppEntry alloc] init];
+    _appEntry.rootViewController = self.viewController;
+    [_appEntry boot];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

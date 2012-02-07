@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TDDAppEntry.h"
 @class ViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    
+    TDDAppEntry *_appEntry;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
