@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tweet.h"
 
-@interface PublicTimeLineViewController : UITableViewController
+@protocol PublicTimeLineInterface
+- (NSInteger)tweetCount;
+- (Tweet*)tweetForIndexPath:(NSIndexPath*)indexPath;
+- (void)reload;
+
+@end
+
+@interface PublicTimeLineViewController : UITableViewController {
+    NSObject<PublicTimeLineInterface> *_controller;
+}
+
+@property(nonatomic,assign) NSObject<PublicTimeLineInterface> *controller;
 
 @end

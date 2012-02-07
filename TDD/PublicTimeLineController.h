@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "PublicTimeLineViewController.h"
+#import "TwitterClient.h"
 
 
-@interface PublicTimeLineController : NSObject {
+@interface PublicTimeLineController : NSObject<PublicTimeLineInterface> {
     
     PublicTimeLineViewController *_viewController;
+@private
+    TwitterClient *_twitterClient;
 }
-@property(nonatomic,strong) PublicTimeLineViewController *viewController;
+@property(nonatomic,retain) PublicTimeLineViewController *viewController;
+@property(nonatomic,retain) TwitterClient *twitterClient;
 
 - (UIView*)view;
 @end

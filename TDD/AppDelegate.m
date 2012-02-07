@@ -17,6 +17,7 @@
 
 - (void)dealloc
 {
+    [_appEntry reboot];
     _appEntry.rootViewController = nil;
     [_appEntry release];
     [_window release];

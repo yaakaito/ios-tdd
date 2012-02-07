@@ -7,7 +7,6 @@
 //
 
 #import "TDDAppEntry.h"
-#import "PublicTimeLineController.h"
 
 @implementation TDDAppEntry
 @synthesize rootViewController;
@@ -16,9 +15,14 @@
     
     NSLog(@"boot tdd app");
     
-    PublicTimeLineController *publicTimeLine = [[PublicTimeLineController alloc] init];
-    [self.rootViewController.view addSubview:publicTimeLine.view];
+    _publicTimeLine = [[PublicTimeLineController alloc] init];
+    [self.rootViewController.view addSubview:_publicTimeLine.view];
     
-    [publicTimeLine release];
+}
+
+- (void)reboot {
+
+    [_publicTimeLine release];
+
 }
 @end

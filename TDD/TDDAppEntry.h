@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PublicTimeLineController.h"
 
 @interface TDDAppEntry : NSObject {
     
     UIViewController *_rootViewController;
+    
+    @private
+    PublicTimeLineController *_publicTimeLine;
 }
-@property(nonatomic, strong) UIViewController *rootViewController;
+@property(nonatomic,retain) UIViewController *rootViewController;
 
 - (void)boot;
+- (void)reboot;
 @end
