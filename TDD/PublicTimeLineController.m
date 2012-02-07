@@ -51,7 +51,7 @@
     [self.twitterClient requestPublicTimeline:^(TwitterClientResponseStatus status) {
         if(status == TwitterClientResponseStatusSuccess){
             NSLog(@"success");
-            //[self.viewController.tableView performSelector:@selector(reloadData)];
+            [self.viewController.tableView performSelector:@selector(reloadData)];
         }
     }];
 }
